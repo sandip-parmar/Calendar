@@ -1,17 +1,21 @@
 package inheritance;
 
 public class Dog extends Animal {
-String Color;
-void color()
-{
- System.out.println("Color of Dog  " + Color);
-}
-public static void main (String[] args)
-{
-	Dog d1= new Dog();
-	d1.eye= 2 ;
-	d1.Color= "brown";
-	d1.color();
-	d1.eyes();
-}
+	
+private String Color;
+
+	public void setColor(String color){
+		this.color = color;
+	}
+	public void getColor()	{
+		System.out.println("Color of Dog is " + Color);
+	}
+	
+	public static void main (String[] args)	{
+		Dog dog1= new Dog();
+		dog1.setEye(2);
+		dog1.setColor("brown");
+		dog1.getColor();
+		dog2.getEyes();
+	}
 }
