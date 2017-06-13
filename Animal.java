@@ -1,9 +1,13 @@
 package inheritance;
 
 public class Animal {
- int eye;
-	 void eyes()
+private int eye;
+	
+	public int setEyes(int number){
+		this.eye = number;
+	}
+	public void getEyes()
 	{
-		System.out.println(" dog has eyes "+eye);
+		System.out.println("A dog has" + eye + " eyes");
 	}
 }
